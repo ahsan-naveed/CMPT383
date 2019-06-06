@@ -1,6 +1,7 @@
 # Ignore everything
-*
+/*
 
 # But not these files...
 !.gitignore
 !a1.scm
+!/a2/
