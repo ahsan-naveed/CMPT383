@@ -5,4 +5,5 @@
 !.gitignore
 !a1.scm
 !/a2/
+!a3.hs
 !README.md
