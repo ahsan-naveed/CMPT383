@@ -49,8 +49,9 @@ is_prime n | n < 2     = False
 
 -- Reference: https://stackoverflow.com/questions/19725292/how-to-reverse-an-integer-in-haskell
 reverse_int :: Integer -> Integer
-reverse_int x | x < 0    = 0 - (read . myreverse . tail . show $ x)
-             | otherwise = read . myreverse . show $ x
+reverse_int x
+            | x < 0     = 0 - (read . myreverse . tail . show $ x)
+            | otherwise = read . myreverse . show $ x
 
 is_emirp :: Integer -> Bool
 is_emirp n
